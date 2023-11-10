@@ -34,6 +34,46 @@
         width: 100%;
         height: 400px;
       }
+        .title {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            text-align: center;
+            font-size: 50px;
+            color: white;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+      .info {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.info h1 {
+  color: #333;
+}
+
+.info p {
+  color: #666;
+}
+
+.info ol {
+  margin-left: 20px;
+}
+
+.info img {
+  max-width: 100%;
+  height: auto;
+}
     </style>
   </head>
   <body>
@@ -47,9 +87,11 @@
     <section class="information">
       <div class="bg">
         <div class="content">
-          <h1>Painting with Code</h1>
+         
+    <div class="title">Make your art website</div>
+          <div class="subtitle">without coding</div>
           <p>In this program, you’ll learn how...</p>
-          <ul>
+          <ol>
             <li>
               A website works, and what’s possible to create using AI only.
             </li>
@@ -62,13 +104,14 @@
             <li>
               (optional) To host your website for free using GitHub + Netlify.
             </li>
-          </ul>
+          </ol>
           <p>
-            <strong
-              >Sun Nov 26, 2-5PM @ Artisan Village at The Falls, 10 Maple
-              Ave</strong
-            >
+            <strong>Sun Nov 26, 2-5PM </strong>
           </p>
+          <p>
+            <strong>Artisan Village at The Falls, 10 Maple Ave</strong>
+          </p>
+          <p>Free. No coding experience required.</p>
           <p>
             <strong>Sign up</strong>: visit the signup form
             <a href="http://bit.ly/painting-with-code" target="_blank"
@@ -102,6 +145,23 @@
           loading="lazy"
         ></iframe>
       </div>
+<div class="info">
+  <h1>These days, we can generate a simple website using an AI chatbot (or “LLM”) like ChatGPT.</h1>
+  <p>As of Nov 2023, the best free one is 👑 Bing Chat 🥇, runner-up is Phind 🥈</p>
+  <p>Here’s an example prompt:</p>
+  <p>generate code for a website named “Painting with Code” which includes:</p>
+  <ol>
+    <li>a navbar with a logo and links to Sessions, About, and Contact pages</li>
+    <li>a full-width landing page image with a large title in front of it saying “Make websites using English & Copy+Paste”</li>
+    <li>A footer with a Google Maps embed indicating the address 10 Maple Ave Smiths Falls ON, and a link to the signup form at bit.ly/painting-with-code please research and find the embed code for this address and include the complete code in your response</li>
+  </ol>
+  <p>Here’s the website we get: <a href="http://bit.ly/pwc-example" target="_blank"
+              >bit.ly/pwc-example</a
+            ></p>
+  <img src="https://media.tenor.com/M1iXurHU81MAAAAC/what-a-time-to-be-alive-simpsons.gif" alt="Simpsons GIF">
+  <p>As you can see it’s pretty bare-bones, but by using more advanced prompts, or by chatting and iterating with the AI, you could create a handy website for free.</p>
+</div>
+
     </section>
   </body>
 </html>
