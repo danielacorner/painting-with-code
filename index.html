@@ -6,22 +6,28 @@
     <title>Painting with Code</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             background: url("splash_background.jpg") no-repeat center center fixed;
             background-size: cover;
-            color: #333;
+            color: #36454F;
         }
         .header-content, .information, .info {
             padding: 20px;
             text-align: center;
         }
         h1 {
-            font-size: 2em;
-            color: #fff;
+            font-size: 3em;
+            color: #FF6347;
+            margin-bottom: 0.5em;
+        }
+        p, li {
+            font-size: 1.2em;
+            color: #36454F;
+            text-align: left;
         }
         .information, .info {
-            background: white;
+            background: #F5F5F5;
             margin-top: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -32,7 +38,7 @@
             border: 0;
         }
         .footer {
-            background-color: #333;
+            background-color: #2F4F4F;
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -40,9 +46,16 @@
             bottom: 0;
             width: 100%;
         }
+        a {
+            color: #FF4500;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
         @media (max-width: 600px) {
             .header-content h1 {
-                font-size: 1.5em;
+                font-size: 2em;
             }
             .google-map iframe {
                 height: 200px;
@@ -50,66 +63,39 @@
         }
     </style>
 </head>
-  <body>
+<body>
     <!-- Header Section -->
     <header>
-      <div class="header-content">
-        <h1>Painting with Code</h1>
-      </div>
+        <div class="header-content">
+            <h1>Painting with Code</h1>
+        </div>
     </header>
     <!-- Information Section -->
     <section class="information">
-      <div class="bg">
-        <div class="content">
-         
-    <div class="title">Make your art website</div>
-          <div class="subtitle">without coding</div>
-          <p>In this program, you’ll learn how...</p>
-          <ol>
-            <li>
-              A website works, and what’s possible to create using AI only.
-            </li>
-            <li>To prompt an AI chatbot to generate some website code.</li>
-            <li>
-              To view our generated website using
-              <a href="https://codepen.io" target="_blank">codepen.io</a>, then
-              iterate by chatting with the AI.
-            </li>
-            <li>
-              (optional) To host your website for free using GitHub + Netlify.
-            </li>
-          </ol>
-          <p>
-            <strong>Sun Nov 26, 2-5PM </strong>
-          </p>
-          <p>
-            <strong>Artisan Village at The Falls, 10 Maple Ave</strong>
-          </p>
-          <p>Free. No coding experience required.</p>
-          <p>
-            <strong>Sign up</strong>: visit the signup form
-            <a href="http://bit.ly/painting-with-code" target="_blank"
-              >bit.ly/painting-with-code</a
-            >
-            or email
-            <a href="mailto:paintingwithcode@gmail.com"
-              >paintingwithcode@gmail.com</a
-            >
-          </p>
-          <ul>
-            <li>Please bring your own computer (or I can lend you one)</li>
-            <li>
-              Can't make it? Email
-              <a href="mailto:paintingwithcode@gmail.com"
-                >paintingwithcode@gmail.com</a
-              >
-              to get notified about the next one!
-            </li>
-          </ul>
+        <div class="bg">
+            <div class="content">
+                <div class="title">Make your art website</div>
+                <div class="subtitle">without coding</div>
+                <p>In this program:</p>
+                <ol>
+                    <li>How a website works, what's a web app, what kinds of websites can we create with AI</li>
+                    <li>Prompting an AI chatbot to create website code</li>
+                    <li>Preview a website using <a href="https://codepen.io" target="_blank">codepen.io</a> or <a href="http://codesandbox.io" target="_blank" rel="noopener noreferrer">codesandbox.io</a></li>
+                    <li>Save and edit your code online @ Github.com</li>
+                    <li>Host your website for free @ Netlify.com</li>
+                </ol>
+                <p><strong>Sun Nov 26, 2-5PM</strong></p>
+                <p><strong>Artisan Village at The Falls, 10 Maple Ave</strong></p>
+                <p>Free. No coding experience required.</p>
+                <p><strong>Sign up</strong>: visit the signup form <a href="http://bit.ly/painting-with-code" target="_blank">bit.ly/painting-with-code</a> or email <a href="mailto:paintingwithcode@gmail.com">paintingwithcode@gmail.com</a></p>
+                <ul>
+                    <li>Please bring your own computer (or I can lend you one)</li>
+                    <li>Can't make it? Email <a href="mailto:paintingwithcode@gmail.com">paintingwithcode@gmail.com</a> to get notified about the next one!</li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <!-- Google Maps Embed -->
-      <div class="google-map">
+        <!-- Google Maps Embed -->
+        <div class="google-map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.437191317388!2d-76.02159868444102!3d44.90077167909879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd27ad1fa61e949%3A0x40d8c8cb8977fe0!2s10%20Maple%20Ave%2C%20Smiths%20Falls%2C%20ON%20K7A%201Z5%2C%20Canada!5e0!3m2!1sen!2sus!4v1636589781506!5m2!1sen!2sus"
           width="600"
@@ -120,15 +106,17 @@
         ></iframe>
       </div>
 <div class="information">
-  <h1>These days, we can generate a simple website using an AI chatbot (or “LLM”) like ChatGPT.</h1>
-  <p>As of Nov 2023, the best free one is 👑 Bing Chat 🥇, runner-up is Phind 🥈</p>
+  <h1>Generate a website using an AI Large Language Model like ChatGPT.</h1>
+  <p>As of Nov 2023, my favourites are ChatGPT4($), <a href="https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx">Bing</a>, <a href="https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx">Phind</a>, <a href="https://labs.perplexity.ai/">Perplexity</a>, <a href="https://huggingface.co/chat/">HuggingFace</a></p>
   <p>Here’s an example prompt:</p>
+  <code>
   <p>generate code for a website named “Painting with Code” which includes:</p>
   <ol>
     <li>a navbar with a logo and links to Sessions, About, and Contact pages</li>
     <li>a full-width landing page image with a large title in front of it saying “Make websites using English & Copy+Paste”</li>
     <li>A footer with a Google Maps embed indicating the address 10 Maple Ave Smiths Falls ON, and a link to the signup form at bit.ly/painting-with-code please research and find the embed code for this address and include the complete code in your response</li>
   </ol>
+  </code>
   <p>Here’s the website we get: <a href="http://bit.ly/pwc-example" target="_blank"
               >bit.ly/pwc-example</a
             ></p>
