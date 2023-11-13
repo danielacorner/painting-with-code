@@ -1,81 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painting with Code</title>
     <style>
-      /* CSS code */
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background: url("splash_background.jpg") no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
-      .header-content {
-        text-align: center;
-        position: absolute;
-        width: 100%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-      }
-      .header-content h1 {
-        font-size: 60px;
-      }
-      .information {
-        background: white;
-        padding: 40px;
-      }
-      .google-map {
-        width: 100%;
-        height: 400px;
-      }
-        .title {
-            position: absolute;
-            width: 100%;
-            top: 50%;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: url("splash_background.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+        .header-content, .information, .info {
+            padding: 20px;
             text-align: center;
-            font-size: 50px;
-            color: white;
+        }
+        h1 {
+            font-size: 2em;
+            color: #fff;
+        }
+        .information, .info {
+            background: white;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .google-map iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
         }
         .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
             background-color: #333;
             color: white;
             text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
-      .info {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-}
-
-.info h1 {
-  color: #333;
-}
-
-.info p {
-  color: #666;
-}
-
-.info ol {
-  margin-left: 20px;
-}
-
-.info img {
-  max-width: 100%;
-  height: auto;
-}
+        @media (max-width: 600px) {
+            .header-content h1 {
+                font-size: 1.5em;
+            }
+            .google-map iframe {
+                height: 200px;
+            }
+        }
     </style>
-  </head>
+</head>
   <body>
     <!-- Header Section -->
     <header>
@@ -145,7 +119,7 @@
           loading="lazy"
         ></iframe>
       </div>
-<div class="info">
+<div class="information">
   <h1>These days, we can generate a simple website using an AI chatbot (or “LLM”) like ChatGPT.</h1>
   <p>As of Nov 2023, the best free one is 👑 Bing Chat 🥇, runner-up is Phind 🥈</p>
   <p>Here’s an example prompt:</p>
@@ -161,7 +135,9 @@
   <img src="https://media.tenor.com/M1iXurHU81MAAAAC/what-a-time-to-be-alive-simpsons.gif" alt="Simpsons GIF">
   <p>As you can see it’s pretty bare-bones, but by using more advanced prompts, or by chatting and iterating with the AI, you could create a handy website for free.</p>
 </div>
-
-    </section>
-  </body>
+ </section>
+    <div class="footer">
+        © 2023 Painting with Code
+    </div>
+</body>
 </html>
